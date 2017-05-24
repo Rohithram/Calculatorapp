@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_add_black_24dp"
+        android:layout_below="@+id/et_input2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="22dp"/>
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_remove_black_24dp"
+        android:gravity="center"
+
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_alignLeft="@+id/exponent"
+        android:layout_alignStart="@+id/exponent" />
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_close_black_24dp"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/subtract"
+        android:layout_alignBottom="@+id/subtract"
+        android:layout_toRightOf="@+id/subtract"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/add"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_backspace_black_24dp"
+        android:layout_alignTop="@+id/divide"
+        android:layout_alignLeft="@+id/multiply"
+        android:layout_alignStart="@+id/multiply" />
+    <Button
+        android:id="@+id/exponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_expand_less_black_24dp"
+        android:layout_alignBaseline="@+id/divide"
+        android:layout_alignBottom="@+id/divide"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/et_input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="10"
+        android:hint="Enter input 1"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_marginTop="22dp"
+        android:layout_alignRight="@+id/multiply"
+        android:layout_alignEnd="@+id/multiply"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add" />
+
+    <EditText
+        android:id="@+id/et_input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:maxLength="10"
+        android:hint="Enter input 2"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_below="@id/et_input1"
+        android:layout_alignLeft="@+id/et_input1"
+        android:layout_alignStart="@+id/et_input1"
+        android:layout_alignRight="@+id/multiply"
+        android:layout_alignEnd="@+id/multiply" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Result"
+        android:textSize="30sp"
+        android:background="#D3D3D3"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/divide"
+/>
+
+
+
+</RelativeLayout>
